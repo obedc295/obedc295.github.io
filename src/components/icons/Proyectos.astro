@@ -1,0 +1,98 @@
+---
+import Tailwind from "../icons/Tailwind.astro";
+import GithubIcon from '../icons/githubicon.astro';
+
+const TAGS = {
+  TAILWIND: {
+    name: "Tailwind",
+    class: "text-[#73bcf6] hover:bg-gradient-to-r from-[#73bcf6] to-[#38bdf8] hover:text-white transition-colors duration-300 ease-in-out",
+    icon: Tailwind
+  }
+};
+
+
+const PROJECTS = [
+  {
+    title: "Replica Página Web de Nike",
+    description: "Una página que imita el estilo del encabezado, carrusel y Footer de la página oficial de Nike",
+    link: "https://github.com/obedc295/LAB-INTROSISTEMAS/tree/main/Nike%20Tarea%20%233",
+    image: "/projects/svgl2.png",
+    tags: [TAGS.TAILWIND]
+  }
+]
+
+---
+
+{
+
+PROJECTS.map(({ image, title, description, tags})=>(
+<div class="border border-gray-300 rounded-lg p-4 mb-4">
+<article>
+  
+  <h3 class="text-2xl font-semibold text-red-300 mb-2">{title}</h3>
+  <p class="text-1xl mb-4 text-pretty">{description}</p>
+
+  <ul class="flex gap-x-4 flex-row">
+
+    {tags.map((tag)=>(
+
+<span   class="rounded-full border-white flex justify-center items-center h-10 w-full">
+<tag.icon ></tag.icon>‎ 
+ {tag.name}
+</span>
+
+    ))
+    }
+    </ul>
+
+    <img class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 mb-6" src={image} alt="Captura de Pantalla del Proyecto" />
+
+   <a href="https://github.com/obedc295/LAB-INTROSISTEMAS/tree/main/Nike%20Tarea%20%233"   class="rounded-full border-white flex justify-center items-center bg-white/5 hover:scale-110 hover:bg-white/10 h-10 w-full mb-6 py-6"><GithubIcon />‎ Código de Nike</a>
+  
+  </article>
+</div>
+
+
+
+
+)
+
+
+
+)
+
+
+
+}
+
+  
+<div class="border border-gray-300 rounded-lg p-4 mb-6">
+  <article class="flex flex-col items-center">
+    <h3 class="text-2xl font-semibold text-red-300 mb-2">Replica Página Web Namecheap</h3>
+    <p class="text-1xl mb-4 text-pretty">Una página que imita 3 secciones de la página de Namecheap, Encabezado, Funciones y Complementos</p>
+
+    <div class="flex items-center mb-6"> <!-- Contenedor para el logo de Tailwind y el texto -->
+      <div class="rounded-full border-white h-10 w-15 mr-2"> <!-- Estilo del logo de Tailwind -->
+        <Tailwind>Tailwind</Tailwind>
+      </div>
+      <p class="text-base font-medium">Tailwind</p> <!-- Texto "Tailwind" -->
+    </div>
+
+    <img class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 mb-6" src="/projects/svgl1.png" alt="Captura de Pantalla del Proyecto" />
+
+    <a href="https://github.com/obedc295/LAB-INTROSISTEMAS/tree/main/Namecheap%20Tarea%20%234" class="rounded-full border-white flex justify-center items-center bg-white/5 hover:scale-110 hover:bg-white/10 h-10 w-full mb-6 py-6"><GithubIcon />‎  Código de Namecheap</a>
+  </article>
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+

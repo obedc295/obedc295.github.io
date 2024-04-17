@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Githubicon from '../components/icons/githubicon.astro';
+import Gmailicon from '../components/icons/Gmailicon.astro'
+import Social from "../components/icons/Social.astro"
+import SectionContainer from "../components/icons/SectionContainer.astro";
+import Proyectos from '../components/icons/Proyectos.astro';
+import Acerca from '../components/IMG/Acerca.astro';
+import Footer from '../components/icons/Footer.astro';
+
+---
+
+<Layout title="Obed Castellanos">
+	<main class="pt-24 mt-16 bg-#1A1D36" id="home" >
+		
+		
+		
+		
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+		<SectionContainer class="py-44 pb-22" />
+
+		<section class="w-full mx-auto lg:w-[540px] p-y44">
+			<img class="rounded-full w-19 h-20 mb-4"
+            src="/src/components/IMG/perfil3.png" alt="Obed Foto">
+			<h1 class=" text-4xl text-white font-bold flex justify-start flex-row pb-4 typed-text">
+
+				
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Texto a mostrar
+        var texto = "Hola, me llamo Obed";
+        
+        // Velocidad de escritura (en milisegundos)
+        var velocidadEscritura = 70;
+        
+        // Índice para recorrer el texto
+        var indice = 0;
+
+        // Función para agregar letras al texto
+        function escribirTexto() {
+            document.querySelector(".typed-text").textContent += texto.charAt(indice);
+            indice++;
+            if (indice < texto.length) {
+                setTimeout(escribirTexto, velocidadEscritura);
+            }
+        }
+        
+        // Iniciar la escritura cuando el DOM se haya cargado completamente
+        escribirTexto();
+    });
+</script>
+
+
+				
+
+			</h1>
+		<h2 class=" text-2xl pb-4">
+			<span>Soy estudiante de </span><span class="text-red-200/90 font-bold">Ingenieria en Sistemas en la UNAH. </span><span>Soy de</span><span class="text-red-200/90 font-bold"> El Paraiso, Honduras.</span></h2>
+		<ul>
+			<li >
+				<nav class="flex gap-x-4 ">
+				<div    class="rounded-full border-white flex justify-center items-center bg-white/5 hover:scale-110 hover:bg-white/10 h-10 w-17"
+				>
+				<Social href="https://github.com/obedc295">
+					<Githubicon></Githubicon>Github
+				</Social>
+			</div>
+
+				<div    class="rounded-full border-white flex justify-center items-center bg-white/5 hover:scale-110 hover:bg-white/10 h-10 w-17"
+				>
+				<Social href="mailto:obedco295@gmail.com">
+					<Gmailicon ></Gmailicon>obedco295@gmail.com
+				</Social>
+			</div>
+			</nav>
+			</li>
+		</ul>
+
+
+		<section id="proyectos" class="justify-center items-center  bg-transparent mt-80 mb-2">
+			<h2 class="font-bold text-3xl text-yellow-200">
+				<span class="material-symbols-outlined 10px">code</span> Proyectos
+			</h2>
+			<Proyectos />
+		</section>
+
+
+		<section id="acercade" class="justify-center items-center bg-transparent ">
+			<h2 class="font-bold text-3xl text-yellow-200">
+				<span class="material-symbols-outlined">
+					emoji_people
+					</span>Acerca de Mi
+			</h2>
+		<Acerca></Acerca>
+	</section>
+	<Footer></Footer>
+</Layout>
+	</main>
+<style>
+</style>

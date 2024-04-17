@@ -1,0 +1,63 @@
+---
+import Header from '../components/Header.astro';
+import '@fontsource-variable/onest';
+import Proyectos from '../components/icons/Proyectos.astro';
+import Footer from "../components/icons/Footer.astro";
+import code from "../components/icons/Code.astro";
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-neutral-950">
+		
+<header>
+	<Header></Header>
+</header>
+		
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+	color-scheme: light dark;
+		
+	}
+	/* global.css */
+
+
+
+	html {
+  font-family: 'Onest', sans-serif;
+                 
+}
+		
+		
+	
+
+	body{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+  top: 0;
+  z-index: -2;
+  height: 100vh; /* 100% de la altura de la ventana del navegador */
+  width: 100vw; /* 100% del ancho de la ventana del navegador */
+  background: #090D1B; /* Color de fondo */
+  background: radial-gradient(#90D1B0 1px, #090D1B 1px); /* Gradiente radial con colores especificados */
+  background-size: 20px 20px;
+
+	}
+	
+</style>
