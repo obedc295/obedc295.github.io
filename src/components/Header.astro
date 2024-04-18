@@ -33,22 +33,7 @@
     }
   </style>
   
-  <script>
-    let prevScrollPos = window.pageYOffset;
-  
-    window.onscroll = function() {
-      const navbar = document.getElementById('navbar');
-      const currentScrollPos = window.pageYOffset;
-      if (navbar) { // Verificar si navbar es null
-        if (prevScrollPos > currentScrollPos) {
-          navbar.style.top = '0';
-        } else {
-          navbar.style.top = '-100px';
-        }
-        prevScrollPos = currentScrollPos;
-      }
-    }
-  </script>
+
   
   
   
