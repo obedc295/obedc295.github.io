@@ -25,7 +25,30 @@ import Footer from '../components/icons/Footer.astro';
 			<img class="rounded-full w-19 h-20 mb-4"
             src="/perfil3.png" alt="Obed Foto">
 			<h1 class=" text-4xl text-white font-bold flex justify-start flex-row pb-4 typed-text">
-				Obed Castellanos
+				<script>
+					// Texto a mostrar
+					var texto = "Hola, me llamo Obed";
+					
+					// Velocidad de escritura (en milisegundos)
+					var velocidadEscritura = 70;
+					
+					// Índice para recorrer el texto
+					var indice = 0;
+					
+					// Función para agregar letras al texto
+					function escribirTexto() {
+						document.querySelector(".typed-text").textContent += texto.charAt(indice);
+						indice++;
+						if (indice < texto.length) {
+							setTimeout(escribirTexto, velocidadEscritura);
+						}
+					}
+					
+					// Iniciar la escritura cuando la página se carga
+					window.onload = function () {
+						escribirTexto();
+					};
+				</script>
 			</h1>
 		<h2 class=" text-2xl pb-4">
 			<span>Soy estudiante de </span><span class="text-red-200/90 font-bold">Ingenieria en Sistemas en la UNAH. </span><span>Soy de</span><span class="text-red-200/90 font-bold"> El Paraiso, Honduras.</span></h2>
