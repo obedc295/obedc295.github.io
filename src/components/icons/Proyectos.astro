@@ -37,7 +37,7 @@ PROJECTS.map(({ image, title, description, tags})=>(
     {tags.map((tag)=>(
 
 <span   class="rounded-full border-white flex justify-center items-center h-10 w-full">
-<tag.icon ></tag.icon>‎ 
+<tag.icon class="size-6" ></tag.icon>‎ 
  {tag.name}
 </span>
 
@@ -72,16 +72,15 @@ PROJECTS.map(({ image, title, description, tags})=>(
     <p class="text-1xl mb-4 text-pretty">Una página que imita 3 secciones de la página de Namecheap, Encabezado, Funciones y Complementos</p>
 
     <div class="flex items-center mb-6"> <!-- Contenedor para el logo de Tailwind y el texto -->
-      <div class="rounded-full border-white h-10 w-15 mr-2"> <!-- Estilo del logo de Tailwind -->
-        <Tailwind>Tailwind</Tailwind>
-      </div>
-      <p class="text-base font-medium">Tailwind</p> <!-- Texto "Tailwind" -->
+    <!-- Estilo del logo de Tailwind -->
+        <Tailwind class="size-6"> </Tailwind>
+      
+      <p class="text-base font-medium">‎ Tailwind</p> <!-- Texto "Tailwind" -->
     </div>
 
     <img class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 mb-6" src="/projects/svgl1.png" alt="Captura de Pantalla del Proyecto" />
 
     <a href="https://github.com/obedc295/LAB-INTROSISTEMAS/tree/main/Namecheap%20Tarea%20%234" class="rounded-full border-white flex justify-center items-center bg-white/5 hover:scale-110 hover:bg-white/10 h-10 w-full mb-6 py-6"><GithubIcon />‎  Código de Namecheap</a>
-<a href="https://obedreplicanamecheap.netlify.app/"   class="rounded-full border-white flex justify-center items-center bg-white/5 hover:scale-110 hover:bg-white/10 h-10 w-full mb-6 py-6">‎ Ver página</a>
   </article>
 </div>
 
